@@ -7,35 +7,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="form">
-        <h1>In Web design,What does CSS stand for?</h1>
-        <table class="select">
-            <tr>
-              <td class="one"><button>A </button></td>
-              <td class="two">Counter strike source</td>
-            </tr>
-            <tr>
-               <td class="one"><button>B</button></td>
-               <td class="two">Corrective style sheets</td>
-            </tr>
-            <tr>
-                <td class="one" id="change" onclick="change(event)"><button>C</button></td>
-                <td class="two">Computer style sheets</td>
-            </tr>
-            <tr>
-                <td class="one"><button id="green" onclick="correct(event)">D</button></td>
-                <td class="two"><Span>Cascading style sheets</Span></td>
-            </tr>
-        </table>
+    <div class="center">
+        <h2>In web design,what does CSS stand for?</h2>
+        <button onclick="wrong1()" id="btn1" style="padding-right: 118px;"><span>A</span>  Corrier static sourse</button><br>
+        <button onclick="wrong2()" id="btn2" ><span>B</span>  Correstive style sourse</button><br>
+        <button onclick="wrong3()" id="btn3" style="padding-right: 126px;"><span>C</span>  corrier style sheet</button><br>
+        <button onclick="correct()" id="btn" ><span>D</span>  Cascading style sheet</button>
     </div>
     <script>
-       
-        function correct(event){
-            let green = document.getElementById('green');
+       function wrong1(){
+          document.getElementById("btn1").style.background="red";
         }
-        function change(){
-            let change=document.getElementById('change').style="background-color:green";
-          
+        function wrong2(){
+            document.getElementById("btn2").style.background="red";
+        }
+        function wrong3(){
+            document.getElementById("btn3").style.background="red";
+        }
+        function correct(){
+            document.getElementById("btn").style.background="green";
         }
     </script>
 </body>
