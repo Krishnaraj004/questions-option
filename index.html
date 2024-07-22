@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form">
+        <h1>In Web design,What does CSS stand for?</h1>
+        <table class="select">
+            <tr>
+              <td class="one"><button>A </button></td>
+              <td class="two">Counter strike source</td>
+            </tr>
+            <tr>
+               <td class="one"><button>B</button></td>
+               <td class="two">Corrective style sheets</td>
+            </tr>
+            <tr>
+                <td class="one" id="change" onclick="change(event)"><button>C</button></td>
+                <td class="two">Computer style sheets</td>
+            </tr>
+            <tr>
+                <td class="one"><button id="green" onclick="correct(event)">D</button></td>
+                <td class="two"><Span>Cascading style sheets</Span></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+       
+        function correct(event){
+            let green = document.getElementById('green');
+        }
+        function change(){
+            let change=document.getElementById('change').style="background-color:green";
+          
+        }
+    </script>
+</body>
+</html>
